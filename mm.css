@@ -11,10 +11,8 @@ body {
 }
 
 .container {
-  width: 90%;
-  max-width: 900px;
-  height: 75%;
-  max-height: 600px;
+  width: 900px;
+  height: 700px;
   background-color: rgba(245, 248, 248, 0.5); /* Transparent light gray background */
   position: absolute;
   transform: translate(-50%, -50%);
@@ -209,6 +207,7 @@ body {
   display: inline-block; /* Makes each word behave like an inline element */
   line-height: 1.5; /* Adds space between lines for better readability */
   width: 100%; /* Ensures text wraps correctly within the container */
+  margin-left: 40px;
 }
 
 .words .letter {
