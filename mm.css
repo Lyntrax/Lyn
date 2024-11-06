@@ -11,8 +11,8 @@ body {
 }
 
 .container {
-  width: 900px;
-  height: 600px;
+  width: 920px;
+  height: 620px;
   background-color: rgba(245, 248, 248, 0.5); /* Transparent light gray background */
   position: absolute;
   transform: translate(-50%, -50%);
@@ -166,19 +166,21 @@ body {
 
 
  .personal-message {
-  position: relative;
   padding: 20px;
-  width: 100%; /* Take up full width */
-  text-align: center; /* Center the text */
+  width: 100%;  /* Full width of the container */
   font-size: 2rem;
   color: #000000;
   font-family: 'Cursive', sans-serif;
-  word-wrap: break-word; /* Ensure words wrap properly */
-  overflow-wrap: break-word; /* Prevent text overflow */
-  margin: 0; /* Remove any margin to prevent overflow */
-  display: block; /* Ensure the element behaves as a block */
-  white-space: normal; /* Allow the text to wrap normally */
-  box-sizing: border-box; /* Include padding inside the width calculation */
+  word-wrap: break-word; /* Ensure long words break and wrap correctly */
+  overflow-wrap: break-word; /* Prevent overflow */
+  text-align: center; /* Center the text */
+  white-space: normal; /* Allow text to wrap normally */
+  min-height: 80px; /* Ensure there’s enough height for the content */
+  box-sizing: border-box; /* Include padding in the element's width calculation */
+  display: block; /* Ensure block-level behavior */
+  margin: 0 auto; /* Center the element */
+  word-break: break-word; /* Force line break for long words */
+  margin-right: 99999px;
 }
 
   
