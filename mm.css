@@ -11,8 +11,8 @@ body {
 }
 
 .container {
-  width: 940px;
-  height: 640px;
+  width: 935px;
+  height: 600px;
   background-color: rgba(245, 248, 248, 0.5); /* Transparent light gray background */
   position: absolute;
   transform: translate(-50%, -50%);
