@@ -11,9 +11,9 @@ body {
 }
 
 .container {
-  width: 90vh;
+  width: 90%;
   max-width: 900px;
-  height: 75vh;
+  height: 75%;
   max-height: 600px;
   background-color: rgba(245, 248, 248, 0.5); /* Transparent light gray background */
   position: absolute;
@@ -31,8 +31,7 @@ body {
 
 
 .cake {
-  width: 60vh;
-  height: 20vh;
+  width: 100%;
   position: absolute;
   bottom: 110px;
   margin-bottom: 70px;
@@ -41,8 +40,8 @@ body {
 .bottom-layer,
 .top-layer,
 .middle-layer {
-  height: 12vh;
-  width: 30vh;
+  height: 80px;
+  width: 240px;
   position: relative;
   margin: auto;
   background-repeat: repeat;
@@ -91,8 +90,8 @@ body {
     #f79eff 5px,
     #ff9eea 10px
   );
-  height: 8vh;
-  width: 4vh;
+  height: 45px;
+  width: 15px;
   position: absolute;
   margin: auto;
   left: 0;
@@ -111,13 +110,12 @@ body {
 .candle:after {
   content: "";
   position: absolute;
-  height: 2vh;
-  width: 2vh;
+  height: 16px;
+  width: 16px;
   background-color: #ffa754;
   border-radius: 0 50% 50% 50%;
   transform: scale(0) rotate(45deg);
   bottom: 50px;
-  top: -2vh;
   left: -0.5px;
   animation: flame 1.5s 5s forwards;
 }
@@ -194,7 +192,7 @@ body {
   font-family: 'Cursive', sans-serif;
   word-wrap: break-word; /* Ensure text wraps correctly */
   overflow-wrap: break-word; /* Helps prevent text overflow */
-  margin-right: 200px; /* Helps handle long words or URLs */
+  margin-right: 1000px; /* Helps handle long words or URLs */
   
 }
 
