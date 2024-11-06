@@ -11,9 +11,9 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 90vh;
   max-width: 900px;
-  height: 75%;
+  height: 75vh;
   max-height: 600px;
   background-color: rgba(245, 248, 248, 0.5); /* Transparent light gray background */
   position: absolute;
@@ -31,7 +31,8 @@ body {
 
 
 .cake {
-  width: 100%;
+  width: 60vh;
+  height: 20vh;
   position: absolute;
   bottom: 110px;
   margin-bottom: 70px;
@@ -40,8 +41,8 @@ body {
 .bottom-layer,
 .top-layer,
 .middle-layer {
-  height: 80px;
-  width: 240px;
+  height: 12vh;
+  width: 30vh;
   position: relative;
   margin: auto;
   background-repeat: repeat;
@@ -90,8 +91,8 @@ body {
     #f79eff 5px,
     #ff9eea 10px
   );
-  height: 45px;
-  width: 15px;
+  height: 8vh;
+  width: 4vh;
   position: absolute;
   margin: auto;
   left: 0;
@@ -110,12 +111,13 @@ body {
 .candle:after {
   content: "";
   position: absolute;
-  height: 16px;
-  width: 16px;
+  height: 2vh;
+  width: 2vh;
   background-color: #ffa754;
   border-radius: 0 50% 50% 50%;
   transform: scale(0) rotate(45deg);
   bottom: 50px;
+  top: -2vh;
   left: -0.5px;
   animation: flame 1.5s 5s forwards;
 }
