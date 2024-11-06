@@ -196,7 +196,8 @@ body {
   color: #000000;
   font-family: 'Cursive', sans-serif;
   word-wrap: break-word; /* Ensure text wraps correctly */
-  overflow-wrap: break-word; /* Helps handle long words or URLs */
+  overflow-wrap: break-word;
+  margin-right: 30px;/* Helps handle long words or URLs */
 }
 
 .words {
