@@ -186,16 +186,32 @@ body {
   margin-left: 10px; 
 }
 .personal-message {
-  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;  /* Ensure the container takes up the full width */
+  letter-spacing: 2px;
+  padding: 20px;  /* Add padding to give the text space inside the container */
+  text-align: center; /* Center the text */
   font-size: 2rem;
   color: #000000;
   font-family: 'Cursive', sans-serif;
-  margin-top: 20px;
-  
-  
+  word-wrap: break-word; /* Ensure text wraps correctly */
+  overflow-wrap: break-word; /* Helps handle long words or URLs */
 }
-audio{
-  display: none;
+
+.words {
+  font-size: 25px;
+  color: #000000;
+  font-family: 'Brush Script MT', cursive;
+  opacity: 0;
+  animation: fade-in 0.5s ease forwards;
+  animation-delay: 13s;
+  letter-spacing: -2px;
+  word-wrap: break-word; /* Ensure words break and wrap */
+  overflow-wrap: break-word; /* Helps prevent text overflow */
+  max-width: 100%; /* Ensures the words don't extend beyond the container */
+  display: inline-block; /* Makes each word behave like an inline element */
+  line-height: 1.5; /* Adds space between lines for better readability */
 }
 
 .words .letter {
@@ -213,3 +229,15 @@ audio{
     opacity: 1;
   }
 }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
