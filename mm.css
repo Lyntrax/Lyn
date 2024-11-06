@@ -184,8 +184,7 @@ body {
 
 .letter-b {
   margin-left: 10px; 
-}
-.personal-message {
+}.personal-message {
   position: absolute;
   bottom: 20px;
   width: 100%;  /* Ensure the container takes up the full width */
@@ -196,8 +195,9 @@ body {
   color: #000000;
   font-family: 'Cursive', sans-serif;
   word-wrap: break-word; /* Ensure text wraps correctly */
-  overflow-wrap: break-word;
-  margin-right: 30px;/* Helps handle long words or URLs */
+  overflow-wrap: break-word; /* Helps prevent text overflow */
+  margin-right: 30px; /* Helps handle long words or URLs */
+  margin-left: 30px; /* Adds margin to left side for alignment */
 }
 
 .words {
@@ -210,16 +210,15 @@ body {
   letter-spacing: -2px;
   word-wrap: break-word; /* Ensure words break and wrap */
   overflow-wrap: break-word; /* Helps prevent text overflow */
-  max-width: 100%; /* Ensures the words don't extend beyond the container */
   display: inline-block; /* Makes each word behave like an inline element */
   line-height: 1.5; /* Adds space between lines for better readability */
+  width: 100%; /* Ensures text wraps correctly within the container */
 }
 
 .words .letter {
   display: inline-block;
   opacity: 0;
   animation: fadeIn 0.5s forwards;
-  letter-spacing: -1px;
 }
 
 @keyframes fadeIn {
