@@ -23,9 +23,7 @@ body {
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
-  height: auto; /* Let the height grow with content */
-  max-height: 500px; /* Optional: Set a max height to prevent container from growing indefinitely */
-  overflow-y: auto; /* Allow vertical scrolling if content exceeds max height */
+  overflow: hidden; /* Hide any overflow content */
 }
 
 .cake {
@@ -206,9 +204,8 @@ body {
   font-family: 'Cursive', sans-serif;
   word-wrap: break-word; /* Ensure text wraps correctly */
   overflow-wrap: break-word; /* Helps prevent text overflow */
-  max-width: 100%; /* Ensures text stays within the container */
-  box-sizing: border-box; /* Prevent text overflow beyond container */
-  margin-right: 1000px; /* Helps handle long words or URLs */
+  margin-right: 0; /* Removed large margin to keep text within the container */
+  line-height: 1.5;
 }
 
 
