@@ -11,8 +11,10 @@ body {
 }
 
 .container {
-  width: 900px;
-  height: 600px;
+  width: 90%;
+  max-width: 900px;
+  height: 75%;
+  max-height: 600px;
   background-color: rgba(245, 248, 248, 0.5); /* Transparent light gray background */
   position: absolute;
   transform: translate(-50%, -50%);
@@ -22,6 +24,9 @@ body {
   box-shadow: 0 20px 45px rgba(120, 76, 10, 0.25);
   overflow: hidden;
   text-align: center;
+  margin: 0%;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 
@@ -161,16 +166,7 @@ body {
 }
 
 
-.personal-message {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  letter-spacing: 2px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  
-}
+
 
 .words {
   font-size: 25px;
@@ -196,8 +192,8 @@ body {
   font-family: 'Cursive', sans-serif;
   word-wrap: break-word; /* Ensure text wraps correctly */
   overflow-wrap: break-word; /* Helps prevent text overflow */
-  margin-right: 30px; /* Helps handle long words or URLs */
-  margin-left: 30px; /* Adds margin to left side for alignment */
+  margin-right: 200px; /* Helps handle long words or URLs */
+  
 }
 
 .words {
@@ -240,4 +236,3 @@ body {
     transform: translateY(0);
   }
 }
-
