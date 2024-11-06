@@ -1,0 +1,253 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(bd.jpg);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px; /* Maximum width to prevent too wide on large screens */
+  height: auto;
+  background-color: rgba(245, 248, 248, 0.5);
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 8px;
+  box-shadow: 0 20px 45px rgba(120, 76, 10, 0.25);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+
+.cake {
+  width: 100%;
+  position: absolute;
+  bottom: 110px;
+  margin-bottom: 70px;
+}
+
+.bottom-layer,
+.top-layer,
+.middle-layer {
+  height: 80px;
+  width: 240px;
+  position: relative;
+  margin: auto;
+  background-repeat: repeat;
+  background-size: 100% 100%, 60px 100px;
+  background-position: 28px 0;
+  background-image: linear-gradient(
+      transparent 50px,
+      #f7c8d4 50px, 
+      #f7c8d4 50px,
+      transparent 60px
+    ),
+    radial-gradient(circle at 30px 5px, #da8fba 30px, #91557f 31px);
+  border-radius: 15px;
+}
+
+.middle-layer {
+  transform: scale(0.85);
+  top: 72px;
+  animation: rise-1 2s forwards;
+}
+
+@keyframes rise-1 {
+  100% {
+    top: 7px;
+  }
+}
+
+.top-layer {
+  transform: scale(0.7);
+  top: 144px;
+  animation: rise-2 2s 2s forwards;
+}
+
+@keyframes rise-2 {
+  100% {
+    top: 26px;
+  }
+}
+
+.candle {
+  background: repeating-linear-gradient(
+    45deg,
+    #f50bba 0,
+    #fd18b1 5px,
+    #f79eff 5px,
+    #ff9eea 10px
+  );
+  height: 45px;
+  width: 15px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: rise-3 1s 4s forwards;
+  border-radius: 3px;
+}
+
+@keyframes rise-3 {
+  100% {
+    bottom: 202px;
+  }
+}
+
+.candle:after {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  background-color: #ffa754;
+  border-radius: 0 50% 50% 50%;
+  transform: scale(0) rotate(45deg);
+  bottom: 50px;
+  left: -0.5px;
+  animation: flame 1.5s 5s forwards;
+}
+
+@keyframes flame {
+  100% {
+    transform: scale(1) rotate(45deg);
+  }
+}
+
+.message {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  color: #000000;
+  font-weight: bold;
+  display: flex;
+  letter-spacing: 2px;
+}
+
+.letter {
+  opacity: 0;
+  animation: fade-in 0.5s ease forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.personal-message {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  letter-spacing: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.words {
+  font-size: 25px;
+  color: #000000;
+  font-family: 'Brush Script MT', cursive;
+  opacity: 0;
+  animation: fade-in 0.5s ease forwards;
+  animation-delay: 13s;
+  letter-spacing: -2px;
+}
+
+.personal-message {
+  text-align: center;
+  font-size: 2rem;
+  color: #000000;
+  font-family: 'Cursive', sans-serif;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+
+  .message {
+    font-size: 35px;
+  }
+
+  .words {
+    font-size: 22px;
+  }
+
+  .cake {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .message {
+    font-size: 30px;
+  }
+
+  .words {
+    font-size: 20px;
+  }
+
+  .cake {
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 5px;
+  }
+
+  .cake {
+    width: 60%;
+  }
+
+  .message {
+    font-size: 25px;
+  }
+
+  .words {
+    font-size: 18px;
+  }
+}
