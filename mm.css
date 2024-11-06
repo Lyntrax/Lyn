@@ -164,20 +164,25 @@ body {
 }
 
 
-.personal-message {
- position: relative;
+
+ .personal-message {
+  position: relative;
   padding: 20px;
-  max-width: 100%; /* Ensure the message does not overflow */
+  width: 100%; /* Take up full width */
   text-align: center; /* Center the text */
-  font-size: 2rem; /* Adjusted font size */
+  font-size: 2rem;
   color: #000000;
   font-family: 'Cursive', sans-serif;
-  word-wrap: break-word; /* Ensure long words break and wrap correctly */
-  overflow-wrap: break-word; /* Prevent overflow */
-  margin: 0 auto; /* Center the element within the container */
-  box-sizing: border-box; /* Include padding in the element's width calculation */
-  
+  word-wrap: break-word; /* Ensure words wrap properly */
+  overflow-wrap: break-word; /* Prevent text overflow */
+  margin: 0; /* Remove any margin to prevent overflow */
+  display: block; /* Ensure the element behaves as a block */
+  white-space: normal; /* Allow the text to wrap normally */
+  box-sizing: border-box; /* Include padding inside the width calculation */
 }
+
+  
+
 
 .words {
   font-size: 25px;
