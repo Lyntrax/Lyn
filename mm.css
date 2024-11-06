@@ -13,7 +13,7 @@ body {
 .container {
  width: 70%;
   max-width: 900px;
-  height: auto; /* Let the height grow with content */
+  height: 500px;
   background-color: rgba(245, 248, 248, 0.5); /* Transparent light gray background */
   position: absolute;
   transform: translate(-50%, -50%);
@@ -21,11 +21,11 @@ body {
   left: 50%;
   border-radius: 8px;
   box-shadow: 0 20px 45px rgba(120, 76, 10, 0.25);
-  overflow: auto; /* Allow scrolling if content exceeds height */
+  overflow: hidden;
   text-align: center;
-  margin: 0;
-  padding: 10px;
+  margin: 0%;
   box-sizing: border-box;
+  padding: 10px;
 }
 
 
@@ -180,7 +180,7 @@ body {
 .letter-b {
   margin-left: 10px; 
 }.personal-message {
-  position: absolute;
+position: absolute;
   bottom: 20px;
   width: 100%;  /* Ensure the container takes up the full width */
   letter-spacing: 2px;
@@ -191,13 +191,13 @@ body {
   font-family: 'Cursive', sans-serif;
   word-wrap: break-word; /* Ensure text wraps correctly */
   overflow-wrap: break-word; /* Helps prevent text overflow */
-  margin-right: 1000px; /* Helps handle long words or URLs */
-  max-width: 100%; /* Prevents the text from going outside the container */
+  max-width: 100%; /* Ensures text stays within the container */
+  box-sizing: border-box; /* Includes padding and border in the width calculation */
   
 }
 
 .words {
-  font-size: 25px;
+ font-size: 25px;
   color: #000000;
   font-family: 'Brush Script MT', cursive;
   opacity: 0;
