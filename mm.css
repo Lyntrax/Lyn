@@ -11,9 +11,8 @@ body {
 }
 
 .container {
- width: 70%;
+  width: 70%;
   max-width: 900px;
-  height: 500px;
   background-color: rgba(245, 248, 248, 0.5); /* Transparent light gray background */
   position: absolute;
   transform: translate(-50%, -50%);
@@ -21,13 +20,13 @@ body {
   left: 50%;
   border-radius: 8px;
   box-shadow: 0 20px 45px rgba(120, 76, 10, 0.25);
-  overflow: hidden;
   text-align: center;
-  margin: 0%;
+  padding: 20px;
   box-sizing: border-box;
-  padding: 10px;
+  height: auto; /* Let the height grow with content */
+  max-height: 500px; /* Optional: Set a max height to prevent container from growing indefinitely */
+  overflow-y: auto; /* Allow vertical scrolling if content exceeds max height */
 }
-
 
 .cake {
   width: 100%;
@@ -55,7 +54,6 @@ body {
     radial-gradient(circle at 30px 5px, #da8fba 30px, #91557f 31px); /* Light lavender to pink */
   border-radius: 15px;
 }
-
 
 .middle-layer {
   transform: scale(0.85);
@@ -134,7 +132,7 @@ body {
   color: #000000;
   font-weight: bold;
   display: flex;
-  letter-spacing: 2px; 
+  letter-spacing: 2px;
 }
 
 .letter {
@@ -142,7 +140,7 @@ body {
   animation: fade-in 0.5s ease forwards;
 }
 
-.leter{
+.leter {
   position: absolute;
   top: 20px;
   left: 50%;
@@ -151,8 +149,9 @@ body {
   color: #000000;
   font-weight: bold;
   display: flex;
-  letter-spacing: 2px; 
+  letter-spacing: 2px;
 }
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -164,23 +163,39 @@ body {
   }
 }
 
-
-
-
 .words {
   font-size: 25px;
   color: #000000;
   font-family: 'Brush Script MT', cursive;
   opacity: 0;
   animation: fade-in 0.5s ease forwards;
-  animation-delay: 13s; 
+  animation-delay: 13s;
   letter-spacing: -2px;
+  word-wrap: break-word; /* Ensure words break and wrap */
+  overflow-wrap: break-word; /* Helps prevent text overflow */
+  display: inline-block; /* Makes each word behave like an inline element */
+  line-height: 1.5; /* Adds space between lines for better readability */
+  width: 100%; /* Ensures text wraps correctly within the container */
+  margin-left: 40px;
 }
 
-.letter-b {
-  margin-left: 10px; 
-}.personal-message {
-position: absolute;
+.words .letter {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.personal-message {
+  position: absolute;
   bottom: 20px;
   width: 100%;  /* Ensure the container takes up the full width */
   letter-spacing: 2px;
@@ -192,9 +207,10 @@ position: absolute;
   word-wrap: break-word; /* Ensure text wraps correctly */
   overflow-wrap: break-word; /* Helps prevent text overflow */
   max-width: 100%; /* Ensures text stays within the container */
-  box-sizing: border-box; /* Includes padding and border in the width calculation */
-  
+  box-sizing: border-box; /* Prevent text overflow beyond container */
+  margin-right: 1000px; /* Helps handle long words or URLs */
 }
+
 
 .words {
  font-size: 25px;
