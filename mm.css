@@ -8,6 +8,8 @@
 body {
   background-image: url(bd.jpg);
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -15,15 +17,16 @@ body {
   max-width: 900px;
   background-color: rgba(245, 248, 248, 0.5); /* Transparent light gray background */
   position: absolute;
-  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 8px;
   box-shadow: 0 20px 45px rgba(120, 76, 10, 0.25);
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   box-sizing: border-box;
   overflow: hidden; /* Hide any overflow content */
+  height: auto; /* Allow the container to adjust height based on its content */
 }
 
 .cake {
@@ -129,25 +132,36 @@ body {
   font-size: 40px;
   color: #000000;
   font-weight: bold;
-  display: flex;
   letter-spacing: 2px;
+  display: flex;
 }
 
-.letter {
+.words {
+  font-size: 25px;
+  color: #000000;
+  font-family: 'Brush Script MT', cursive;
   opacity: 0;
   animation: fade-in 0.5s ease forwards;
+  animation-delay: 13s;
+  letter-spacing: -2px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
 }
 
-.leter {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
+.personal-message {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
   color: #000000;
-  font-weight: bold;
-  display: flex;
-  letter-spacing: 2px;
+  font-family: 'Cursive', sans-serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin-top: 40px;
 }
 
 @keyframes fade-in {
@@ -161,28 +175,6 @@ body {
   }
 }
 
-.words {
-  font-size: 25px;
-  color: #000000;
-  font-family: 'Brush Script MT', cursive;
-  opacity: 0;
-  animation: fade-in 0.5s ease forwards;
-  animation-delay: 13s;
-  letter-spacing: -2px;
-  word-wrap: break-word; /* Ensure words break and wrap */
-  overflow-wrap: break-word; /* Helps prevent text overflow */
-  display: inline-block; /* Makes each word behave like an inline element */
-  line-height: 1.5; /* Adds space between lines for better readability */
-  width: 100%; /* Ensures text wraps correctly within the container */
-  margin-left: 40px;
-}
-
-.words .letter {
-  display: inline-block;
-  opacity: 0;
-  animation: fadeIn 0.5s forwards;
-}
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -190,22 +182,6 @@ body {
   100% {
     opacity: 1;
   }
-}
-
-.personal-message {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;  /* Ensure the container takes up the full width */
-  letter-spacing: 2px;
-  padding: 20px;  /* Add padding to give the text space inside the container */
-  text-align: center; /* Center the text */
-  font-size: 2rem;
-  color: #000000;
-  font-family: 'Cursive', sans-serif;
-  word-wrap: break-word; /* Ensure text wraps correctly */
-  overflow-wrap: break-word; /* Helps prevent text overflow */
-  margin-right: 0; /* Removed large margin to keep text within the container */
-  line-height: 1.5;
 }
 
 
