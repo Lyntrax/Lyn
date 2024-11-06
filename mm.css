@@ -165,16 +165,17 @@ body {
 
 
 .personal-message {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  letter-spacing: 2px;
-  
-  padding-right: 20px;
-  padding-bottom: 20px;
-  letter-spacing: -1px;
-      word-wrap: break-word;
-      overflow-wrap: break-word;
+ position: relative;
+  padding: 20px;
+  max-width: 100%; /* Ensure the message does not overflow */
+  text-align: center; /* Center the text */
+  font-size: 2rem; /* Adjusted font size */
+  color: #000000;
+  font-family: 'Cursive', sans-serif;
+  word-wrap: break-word; /* Ensure long words break and wrap correctly */
+  overflow-wrap: break-word; /* Prevent overflow */
+  margin: 0 auto; /* Center the element within the container */
+  box-sizing: border-box; /* Include padding in the element's width calculation */
   
 }
 
