@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/image/4th.jpg);
+    animation: gradient-shift 8s infinite alternate;
+}
+
+@keyframes gradient-shift {
+    0% { background-position: left; }
+    100% { background-position: right; }
+}
+
+
+.container{
+    width: 100%;
+    max-width: 850px;
+    background: rgba(255, 255, 255, 0.548); 
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px rgb(255, 254, 254);
+}
+
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: rgb(2, 2, 2);
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px rgb(0, 0, 0);
+}
+
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box label{
+    width: 95%;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid rgba(168, 23, 23, 0);
+    padding: 0 10px;
+}
+
+.gender-title{
+    color:rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.gender-category{
+    margin: 15px 0;
+    color: rgb(0, 0, 0);
+}
+
+.gender-category label{
+    padding: 0 20px 0 5px;
+}
+
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+
+.form-submit-btn{
+    margin-top: 40px;
+}
+
+.form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    
+    padding: 10px;
+    border:none;
+    border-radius: 3px;
+    color: rgba(5, 5, 5, 0.247);
+    background: rgba(255, 255, 255, 0.692);       
+}
+
+.form-submit-btn input:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+@media(max-width: 600px){
+    .container{
+        min-width: 280px;
+    }
+
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
+}
+
+
+
+.form-title {
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    align-items: center; /* Center both the logo and text */
+    justify-content: center; /* Center the content horizontally */
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px rgb(0, 0, 0);
+}
+
+.title-icon {
+    width: 80px; /* Adjust the size of the logo */
+    height: 80px; /* Ensure it's square for the circle shape */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px; /* Space between the logo and the text */
+}
+
+.form-title span {
+    font-size: 24px; /* Adjust text size if needed */
+}
+
+
+  
+  .password-box {
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    cursor: pointer;
+    color: gray;
+  }
+  
+  .toggle-password:hover {
+    color: black;
+  }
+  a {
+    text-decoration: none;
+  }
+  

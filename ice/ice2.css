@@ -1,0 +1,128 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents scrolling */
+    position: relative; /* For background positioning */
+    color: #eae7ff;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/image/starry-sky.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1; /* Keeps it behind the content */
+    animation: zoom-effect 20s infinite linear;
+}
+
+/* Background Zoom Animation */
+@keyframes zoom-effect {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* Container */
+.container {
+    background: rgba(34, 34, 68, 0.8); /* Dark translucent blue for contrast */
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    width: 80%;
+    max-width: 1200px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6);
+    z-index: 1; /* Ensures it stays above the background */
+    position: relative;
+}
+
+/* Profile Overview */
+.profile-overview {
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #ffd700; /* Golden border */
+    box-shadow: 0 0 15px #ffd700; /* Glowing effect */
+}
+
+.description {
+    font-size: 40px;
+    color: #ffd700; /* Gold */
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 8px #000;
+}
+
+/* Header */
+header h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #a9b5ff; /* Soft blue */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+header p {
+    font-size: 23px;
+    margin-bottom: 10px;
+    color: #eae7ff; /* Light lavender */
+}
+
+/* Motto Section */
+.motto {
+    margin-top: 30px;
+}
+
+.motto h2 {
+    font-size: 35px;
+    color: #ffd700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 6px #000;
+}
+
+.motto p {
+    font-size: 30px;
+    font-style: italic;
+    color: #eae7ff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+}
+
+.back-button {
+    text-decoration: none;
+    background: linear-gradient(90deg, #5b86e5, #36d1dc); /* Gradient: Blue to Teal */
+    padding: 20px 30px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1.4rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
+    background: linear-gradient(90deg, #36d1dc, #5b86e5); /* Reversed Gradient */
+    color: #ffd700;
+}

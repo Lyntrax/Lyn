@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use min-height to allow scrolling if content exceeds viewport */
+    background-image: url(/image/pink-color-background-wuu86815n2z65tgo.jpg);
+    background-size: cover; /* Ensure the background image covers the whole body */
+    background-repeat: no-repeat;
+    animation: gradient-shift 8s infinite alternate;
+    color: #000000;
+}
+
+@keyframes gradient-shift {
+    0% { background-position: left; }
+    100% { background-position: right; }
+}
+
+/* Profile Page Container */
+
+.profile-page{
+color: rgb(0, 0, 0);
+border-radius: 20px;
+padding: 40px;
+text-align: center;
+width: 80%;
+max-width: 1000px;
+box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6);
+}
+/* Header Styling */
+.profile-header {
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-name {
+    font-size: 2.5rem;
+    font-weight: 1000;
+    
+}
+
+.profile-tagline {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* Sections */
+.profile-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    text-align: left;
+    color: #000000;
+    font-size: 22px;
+}
+
+.profile-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.info-list {
+    list-style: none;
+}
+
+.info-list li {
+    margin-bottom: 10px;
+}
+
+/* Interests Gallery */
+.interests-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.interest-image {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.interest-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 20px rgb(255, 105, 180);
+}
+
+/* Next Button */
+.next-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #ff69b4;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 5px 20px rgba(255, 105, 180, 0.3);
+    transition: all 0.3s;
+}
+
+.next-button:hover {
+    background: #ff1493;
+    box-shadow: 0 8px 30px rgba(255, 20, 147, 0.5);
+    transform: translateY(-3px);
+}
+ol {
+    list-style-type: none; /* Removes the numbers and period */
+    padding: 0;
+    margin: 0;
+}
+
+ol li {
+    list-style: none; /* Removes any list-style from the list items */
+    margin: 0;
+    padding: 0;
+}

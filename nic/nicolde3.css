@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    background-image: url('/image/aesthetic-background-illustrations-of-clouds-stars-and-sky-with-purple-gradations-suitable-for-wallpapers-presentation-backgrounds-and-various-other-design-needs-free-vector.jpg');
+    background-size: 200% 100%; /* Make the background larger for animation */
+    background-repeat: no-repeat;
+    background-position: left; /* Start the background at the left */
+    animation: gradient-shift 8s infinite alternate;
+    color: #000000;
+}
+
+@keyframes gradient-shift {
+    0% { background-position: left; }   /* Begin on the left */
+    100% { background-position: right; } /* End on the right */
+}
+.image-gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.image-gallery h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #6b3e6b;
+}
+
+.gallery-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.gallery-item img {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.gallery-item .gallery-caption {
+    font-size: 1.4rem;
+    margin: 0 20px;
+    color: #000000;
+    text-align: justify;
+}
+
+.gallery-item.left {
+    flex-direction: row;
+}
+
+.gallery-item.right {
+    flex-direction: row-reverse;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+.back-button {
+    text-decoration: none;
+    background-color: #642f60ab;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    position: relative;
+    top: -20px; /* Moves the button 20px higher */
+}
+
+
+.back-button:hover {
+    background-color: #cc45aa;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,89 @@
+/* Importing custom fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto+Slab:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(/image/black-aesthetic-1920X1080-wallpaper-992v10lssedu0hsw.jpeg);
+  background-size: 200%;
+  color: #444;
+  padding: 20px;
+}
+
+
+.container{
+ max-width: 900px;
+  width: 100%;
+  background: rgba(236, 228, 228, 0.521);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #000000;
+}
+.subtitle {
+    font-size: 18px;
+    color: #000000;
+    font-style: italic;
+    text-align: center;
+    margin-top: -30px;
+    
+    
+}
+.essay-content {
+  line-height: 1.8;
+  font-size: 1.3rem;
+  margin-top: 40px;
+  color: black;
+}
+
+p {
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 25px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .essay-content {
+    font-size: 1.1rem;
+  }
+}
+.back-button {
+    text-decoration: none;
+    background-color: #020202ab;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    position: relative;
+    bottom: -20px; 
+    
+}
+
+
+.back-button:hover {
+    background-color: #f1e7ef81;
+}

@@ -1,0 +1,95 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(to right, #ee7df1b6, #dddb71);
+    color: #f8f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px; /* Added padding for small screens */
+    box-sizing: border-box;
+}
+
+.essay-container {
+    width: 70%;
+    max-width: 800px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.15); /* Slightly more transparent */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.title {
+    font-family: 'Courier New', monospace;
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #000000; /* Goldish title */
+}
+
+.subtitle {
+    font-family: 'Courier New', monospace;
+    font-size: 1.5em;
+    margin-top: -12px;
+    font-style: italic;
+    color: #000000a6; /* Light gray subtitle */
+}
+
+.section-title {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.5em;
+    margin-top: 50px;
+    color: #000000; /* Lighter text color */
+}
+
+.essay-content {
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: justify;
+    font-family: 'Verdana', sans-serif;
+    margin-top: 25px;
+    color: #000000d3;
+    font-weight: 600;
+}
+
+.back-button {
+    text-decoration: none;
+    background-color: #a948c7ab;
+    padding: 15px 40px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: #c4ee0cb6;
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+@media screen and (max-width: 768px) {
+    .essay-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 2.2em;
+    }
+
+    .essay-content {
+        font-size: 1em;
+    }
+
+    .back-button {
+        font-size: 0.9rem;
+        padding: 12px 30px;
+    }
+}

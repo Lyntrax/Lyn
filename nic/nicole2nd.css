@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use min-height to allow scrolling if content exceeds viewport */
+    background-image: url(/image/cute-aesthetic-w2zk5npwvr7udz56.jpg);
+    background-size: cover; /* Ensure the background image covers the whole body */
+    background-repeat: no-repeat;
+    animation: gradient-shift 8s infinite alternate;
+    color: #000000;
+}
+
+@keyframes gradient-shift {
+    0% { background-position: left; }
+    100% { background-position: right; }
+}
+
+
+/* Container Styles */
+.container {
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    width: 80%;
+    max-width: 1000px;
+    box-shadow: 0px 6px 20px rgb(0, 0, 0);
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    color: #000000;
+    font-weight: 700;
+    letter-spacing: 2px;
+    
+    animation: fadeIn 1s ease-out;
+}
+
+/* Profile Section */
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    color: #000000;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.profile-icon:hover {
+    transform: scale(1.1);
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.bio {
+    font-size: 23px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+/* Motto and Ambitions */
+section h3 {
+    font-size: 2.0rem;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 23px;
+    line-height: 1.8;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Image Gallery */
+.image-gallery {
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-image {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+.back-button {
+    text-decoration: none;
+    background-color: #db65b4ab;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #cc45aa;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
