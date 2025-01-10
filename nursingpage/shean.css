@@ -1,0 +1,79 @@
+/* Importing custom fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lora', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(/image/pg.png);
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #222;
+}
+
+.essay-content {
+  line-height: 1.8;
+  font-size: 1.4rem;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .essay-content {
+    font-size: 1rem;
+  }
+}
+.next-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #c5d181;
+    color: #000000;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+
+.next-button:hover {
+    background: #d9ff00;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px);
+}

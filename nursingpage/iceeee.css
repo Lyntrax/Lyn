@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-image: url(/image/brown-aesthetic-wallpaper-5.jpg);
+    color: #8ace0c;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background-color: rgba(184, 155, 155, 0.329); /* Make the container transparent */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+.author {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.essay {
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.essay p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.essay .intro {
+    font-style: italic;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    .title {
+        font-size: 2rem;
+    }
+}
+.next-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #bd913f;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+
+.next-button:hover {
+    background: #ffad14;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px);
+}

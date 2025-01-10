@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures full height and allows scrolling if needed */
+    background-image: url('/image/0.jpg'); /* Adjust the image path */
+    background-size: 120%; /* Zoomed-in background */
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: background-move 8s infinite alternate linear; /* Smooth movement */
+    color: #000000;
+}
+
+@keyframes background-move {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.profile-card {
+    background: rgba(236, 188, 188, 0.2); /* Transparent background */
+    backdrop-filter: blur(10px); /* Adds a frosted glass effect */
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 900px;
+    color: #ffffff; /* Ensures text visibility */
+}
+
+.profile-name {
+    font-size: 2.5rem;
+    color: #ff79c6;
+    margin-bottom: 20px;
+    animation: glow 3s infinite alternate;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #e959dd;
+    object-fit: cover;
+    animation: glow 3s infinite alternate;
+}
+
+.section-heading {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #ff79c6;
+    animation: glow 3s infinite alternate;
+}
+
+.section-content {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    line-height: 1.5;
+    color: #73007e;
+    animation: glow 3s infinite alternate;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.gallery img {
+    border-radius: 10px;
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #6272a4;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    border-color: #50fa7b;
+}
+
+.action-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #c063b8;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #73007e;
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 5px #ff79c6; }
+    100% { text-shadow: 0 0 20px #bd93f9; }
+}

@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/image/ff.jpg);
+    animation: gradient-shift 8s infinite alternate;
+}
+
+@keyframes gradient-shift {
+    0% { background-position: left; }
+    100% { background-position: right; }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    text-align: center;
+    margin-left: -5px;
+    position: relative;  /* Ensures that the background image appears beneath */
+}
+
+.button-container {
+    background: transparent;  /* Makes the container background transparent */
+    padding: 20px;
+    display: inline-block;
+    width: 500px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.548);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    height: 200px;
+}
+
+
+
+.button {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ece8e8;
+    background: rgba(0, 0, 0, 0.651);  /* Transparent button background */
+    border: 2px solid rgba(247, 247, 247, 0.5);  /* Semi-transparent border */
+    border-radius: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.979);  /* Adjust shadow to match transparency */
+    
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 100px;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);  /* Adjust shadow on hover */
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.single {
+    position: absolute;  /* Remove from normal flow */
+    bottom: 720px;  /* Place it at the top */
+    left: 1480px;  /* Adjust the horizontal position as needed */
+    background-color: aquamarine;
+    padding: 17px 27px;
+    font-size: 21px;
+    font-weight: bold;
+    color: #eb0f0f;
+    border-radius: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 40px;  /* Keep right margin */
+    white-space: nowrap;
+}
+
+.single a {
+    text-decoration: none;
+}
+
+.single:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.single:active {
+    transform: scale(0.95);
+}
