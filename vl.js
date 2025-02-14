@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     $('.container').mouseenter(function () {
         if (balloonCount < maxBalloons) {
-            var balloon = $('<div class="balloon"><div class="heart-balloon"><div class="balloon-text">I love you</div></div></div>');
+            var balloon = $('<div class="balloon"><div class="heart-balloon"><div class="balloon-text">Mwa!</div></div></div>');
             balloon.appendTo('.balloon-container').fadeIn(500);
             balloonCount++;
         }
