@@ -991,7 +991,7 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
   color: rgb(79, 0, 143);
   font-family: 'Dancing Script', cursive; /* Gives it a nice cursive look */
   opacity: 0;
-  animation: fadeIn 1s forwards 5s;
+  animation: fadeIn 1.3s forwards 7s;
   position: fixed;
   top: 50%;
   left: 50%;
