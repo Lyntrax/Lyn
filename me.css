@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+    
+  html, body {
+    height: 100%;
+    font-family: sans-serif;  
+    color: rgba(0, 0, 0, 0.938);
+    scroll-behavior: smooth;
+  }
+    
+  .topbar {
+    background: #141414fd;
+    padding: 40px;
+    text-align: center;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+    
+ .circle-home-image {
+    width: 120px;       
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .profile {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px; 
+  }
+
+  
+  
+
+  .links {
+    margin-top: 10px;
+  }
+  
+  .links a {
+    color: white;
+    text-decoration: none;
+    margin: 50px;
+    font-size: 30px;
+  }
+    
+  .links a:hover {
+    color: #00bcd4;
+  }
+    
+  .section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px 40px;
+    text-align: center;
+    background: rgba(61, 85, 65, 0.527);
+  }
+  
+  h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 38px;
+    margin-bottom: 50px;
+  }
+  
+  p {
+    font-size: 27px;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.863);
+  }
+  
+  a {
+    color: #0077cc;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
