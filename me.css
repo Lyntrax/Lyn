@@ -1,95 +1,161 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-    
-  html, body {
-    height: 100%;
-    font-family: sans-serif;  
-    color: rgba(0, 0, 0, 0.938);
-    scroll-behavior: smooth;
-  }
-    
-  .topbar {
-    background: #141414fd;
-    padding: 40px;
-    text-align: center;
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-  }
-    
- .circle-home-image {
-    width: 120px;       
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .profile {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 20px; 
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  
-  
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f9f9f9;
+  color: #111;
+}
 
-  .links {
-    margin-top: 10px;
-  }
-  
+.bar {
+  background-color:  #000000;
+  padding: 20px 10px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  color: #00bcd4;
+}
+
+.tres {
+  min-height: 100vh;
+  padding: 140px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgba(61, 85, 65, 0.1);
+}
+
+.profile {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.85);
+  margin-bottom: 15px;
+}
+
+a {
+  color: #0077cc;
+  transition: color 0.3s;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #005999;
+}
+
+@media (max-width: 768px) {
   .links a {
-    color: white;
-    text-decoration: none;
-    margin: 50px;
-    font-size: 30px;
+    display: inline-block;
+    margin: 10px;
+    font-size: 18px;
   }
-    
-  .links a:hover {
-    color: #00bcd4;
+
+  h1, h2 {
+    font-size: 1.8rem;
   }
-    
-  .section {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 20px 40px;
-    text-align: center;
-    background: rgba(61, 85, 65, 0.527);
-  }
-  
-  h1 {
-    font-size: 38px;
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    font-size: 38px;
-    margin-bottom: 50px;
-  }
-  
+
   p {
-    font-size: 27px;
-    margin-bottom: 10px;
-    color: rgba(0, 0, 0, 0.863);
+    font-size: 1rem;
   }
-  
-  a {
-    color: #0077cc;
+
+  .profile {
+    width: 120px;
+    height: 120px;
   }
-  
-  a:hover {
-    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 120px 15px 40px;
   }
-  
+
+  .links a {
+    margin: 8px;
+    font-size: 16px;
+  }
+
+  h1, h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+.theme{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  font-size: 26px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+#toggle:not(:checked) + .theme::after {
+  content: "🌙";
+}
+
+#toggle:checked + .theme::after {
+  content: "☀️";
+}
+
+#toggle:checked ~ * {
+  background-color: #020202f8;
+  color: #f0f0f0;
+}
+
+#toggle:checked ~ .bar {
+  background-color: #392d52;
+}
+
+#ttoggle:checked ~ .tres {
+  background-color: #1f1f1f;
+}
+
+#toggle:checked ~ .tres p,
+#toggle:checked ~ .tres h1,
+#toggle:checked ~ .tres h2,
+#toggle:checked ~ .tres a {
+  color: #f0f0f0;
+}
+
+#toggle:checked ~ .theme {
+  color: #f0f0f0;
+}
